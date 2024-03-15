@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "How it works"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "how-it-works"}'></include>
+
+    <main class="main">
+      <div class="container">
+        <include src="./html/_hero.html">
+          {
+            "title": "Let's delve into the details",
+            "text": "Discover the deep aspects of our approach and uncover the key moments of our work to achieve results"
+          }
+        </include>
+
+        <include src="./html/_how.html">
+          {
+            "class": "how--how_it_works",
+            "title": "",
+            "title_a": "Registration",
+            "text_a": "Simply sign up on our website and create your account to start using our services",
+            "number_a": "01",
+            "title_b": "Information input",
+            "text_b": "Provide necessary details about your company and business so we can offer you personalized service",
+            "number_b": "02",
+            "title_c": "Service selection",
+            "text_c": "Choose the accounting services you need from our wide range of offerings, including bookkeeping, financial reporting, tax planning, and more",
+            "number_c": "03",
+            "title_d": "Work with experts",
+            "text_d": "Our experienced team of accountants and financial consultants will work directly with you to ensure effective solutions to your financial needs",
+            "number_d": "04",
+            "title_e": "Receive results",
+            "text_e": "Get the results of our services in the format convenient for you, whether it's financial reports, tax filings, or business management consultations",
+            "number_e": "05"
+          }
+        </include>
+
+        <include src="./html/_additional-double.html">
+          {
+            "title_a": "Convenient registration and secure platform",
+            "text_a": "Step by step to using our optimized accounting services. On our website, you can quickly and easily register, ensuring the accuracy and security of your information on a secure platform",
+            "title_b": "Personalized service selection and professional interaction",
+            "text_b": "Choose services that meet your needs and receive efficient solutions to your financial tasks from experienced specialists. Save time and receive results in a format convenient for you"
+          }
+        </include>
+
+        <include src="./html/how-it-works/_history.html"></include>
+
+        <include src="./html/how-it-works/_divider.html"></include>
+        <include src="./html/how-it-works/_faq.html"></include>
+
+      </div>
+
+      <include src="./html/home/_request.html"></include>
+
+    </main>
+
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

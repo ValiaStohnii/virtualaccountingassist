@@ -14,4 +14,14 @@
   p {
     font-size: 24px;
   }
+
+  &--reverse {
+    img {
+      margin-right: 0;
+    }
+
+    p {
+      margin-right: 48px;
+    }
+  }
 }

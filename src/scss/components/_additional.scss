@@ -2,6 +2,8 @@
 @use "../utils/mixins/"as*;
 
 .additional {
+  $root: &;
+
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 56px;
@@ -29,5 +31,44 @@
     font-weight: var(--fw-400);
     font-size: 24px;
     line-height: 1.19;
+  }
+
+  &--double {
+    justify-content: space-between;
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 86px 0;
+    width: 100%;
+    background-color: unset;
+
+    h2 {
+      margin-bottom: 24px;
+      font-size: 36px;
+      font-weight: var(--fw-400);
+      line-height: 1.4;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.4;
+    }
+
+    #{$root}__content {
+      padding: 48px 36px;
+      align-items: flex-start;
+      max-width: none;
+      text-align: start;
+      border-radius: var(--radius-main);
+
+      &--gray {
+        background-color: var( --color-gray-100);
+        margin-right: 24px;
+        max-width: 630px;
+      }
+
+      &--yellow {
+        background-color: var( --color-yellow-200);
+      }
+    }
   }
 }
