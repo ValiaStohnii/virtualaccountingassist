@@ -2,37 +2,25 @@
 @use "../utils/mixins/"as*;
 
 .footer {
-  padding: rem(48) 0 rem(55);
-  color: var(--color-white);
-  background-color: var(--color-tile-800);
+  padding: 86px 0 48px;
 
   &__inner {
     display: flex;
     align-items: center;
-    margin: 0 auto rem(30);
-    width: 100%;
-    max-width: 980px;
-  }
-
-  &__navs {
-    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--color-gray-400);
+    padding-bottom: 24px;
   }
 
   &__nav {
-    &:not(:last-child) {
-      margin-right: rem(60);
-    }
-
-    p {
-      margin-bottom: 15px;
-      font-family: var(--font-family-secondary);
-      font-size: 32px;
-    }
+    display: flex;
+    align-items: center;
   }
 
-  &__item {
+  .nav__item {
     &:not(:last-child) {
-      margin-bottom: 10px;
+      margin-right: 48px;
     }
   }
 
@@ -41,17 +29,30 @@
   }
 
   &__copyrigth {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .copyrigth {
+      &__list {
+        display: flex;
+      }
+
+      &__item {
+        &:not(:last-child) {
+          margin-right: 36px;
+        }
+      }
+    }
+  }
+
+  p {
+    font-size: 16px;
+    color: var(--color-dark);
   }
 
   .logo {
-    margin-right: rem(70);
-    width: 100%;
-    max-width: 120px;
-
-    img {
-      width: 100%;
-    }
+    margin-right: 56px;
   }
 
   @include media(tablet) {
@@ -98,6 +99,5 @@
     .logo {
       margin-bottom: 32px;
     }
-
   }
 }

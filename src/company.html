@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Company"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "company"}'></include>
+
+    <main class="main">
+      <div class="container">
+        <include src="./html/_hero.html">
+          {
+            "title": "Our history and values",
+            "text": "Learn about our company and what drives us. We aim to build transparent and reliable relationships with our clients, providing high-quality accounting services based on innovation and professionalism"
+          }
+        </include>
+
+        <include src="./html/_additional.html"></include>
+
+        <include src="./html/company/_history.html"></include>
+
+        <include src="./html/_how.html">
+          {
+            "class": "how--company",
+            "title": "How was it",
+            "title_a": "Establishment of the company",
+            "text_a": "",
+            "number_a": "2009",
+            "title_b": "Completion of the first major project on automating accounting processes",
+            "text_b": "",
+            "number_b": "2012",
+            "title_c": "Launch of a training and support program for small businesses",
+            "text_c": "",
+            "number_c": "2015",
+            "title_d": "Successful completion of a large-scale restructuring of the company's structure",
+            "text_d": "",
+            "number_d": "2018",
+            "title_e": "Our services were officially recognized as the best in the industry according to an international competition",
+            "text_e": "",
+            "number_e": "2021"
+          }
+        </include>
+
+        <include src="./html/company/_team.html"></include>
+
+        <include src="./html/company/_approach.html"></include>
+
+        <include src="./html/company/_client.html"></include>
+
+      </div>
+
+      <include src="./html/home/_request.html"></include>
+
+    </main>
+
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

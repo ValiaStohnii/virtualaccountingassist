@@ -1,0 +1,40 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.approach {
+  padding: 56px 0;
+
+  &__content {
+    display: flex;
+  }
+
+  &__list {
+    margin-right: 48px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 36px;
+    }
+  }
+
+  img {
+    border-radius: var(--radius-main);
+  }
+
+  h2 {
+    margin-bottom: 48px;
+  }
+
+  h3 {
+    margin-bottom: 16px;
+    font-weight: var(--fw-700);
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}

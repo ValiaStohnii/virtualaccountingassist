@@ -1,0 +1,72 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.client {
+  padding: 86px 0;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    h3 {
+      font-size: 20px;
+    }
+
+    p {
+      font-weight: var(--fw-500);
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    span {
+      font-weight: var(--fw-400);
+
+      &::before {
+        content: "";
+        padding: 0 12px 0 7px;
+        width: 3px;
+        height: 3px;
+        background-image: url("data:image/svg+xml,%3Csvg width='3' height='4' viewBox='0 0 3 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1.5' cy='2' r='1.5' fill='%232C2E35'/%3E%3C/svg%3E");
+        background-position: 50%;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__avatar {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 16px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-end;
+
+    img {
+      margin-right: 47px;
+      border-radius: var(--radius-main);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+}

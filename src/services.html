@@ -7,15 +7,66 @@
     <include src="./html/_header.html" locals='{"page": "services"}'></include>
 
     <main class="main">
-      <include src="./html/services/_hero.html"></include>
-
       <div class="container">
+        <include src="./html/services/_hero.html"></include>
 
-        <include src="./html/services/_services.html"></include>
+        <include src="./html/_services.html">
+          {
+            "id": "accounting",
+            "title": "Accounting support",
+            "from": "from 2000$",
+            "image": "accounting.jpeg",
+            "title_a": "What the service includes",
+            "text_a": "This service encompasses a full range of accounting services, including bookkeeping, financial reporting, tax preparation and filing, as well as financial consulting",
+            "title_b": "Key features and benefits",
+            "text_b": "Our qualified specialists ensure accuracy and timeliness in financial reporting, allowing you to focus on business development. We offer a personalized approach to each client, taking into account their specific needs and requirements",
+            "title_c": "Who can benefit from the service",
+            "text_c": "Our bookkeeping services are ideal for small and medium-sized enterprises, entrepreneurs, as well as startups in need of efficient and reliable financial management",
+            "title_d": "Any additional details or considerations",
+            "text_d": "We aim not only to handle bookkeeping but also to be your partners in business development. Our experience and expertise will help you make informed financial decisions and achieve new heights in your business"
+          }
+        </include>
+
+        <include src="./html/_services.html">
+          {
+            "id": "financial",
+            "title": "Financial audit",
+            "from": "from 750$",
+            "image": "financial-audit.jpeg",
+            "title_a": "What the service includes",
+            "text_a": "Our financial audit service involves a comprehensive examination of the company's financial operations and reporting, analysis of financial performance indicators, verification of compliance with financial reporting regulations and standards",
+            "title_b": "Key features and benefits",
+            "text_b": "Our qualified auditors will provide an objective and independent assessment of your company's financial condition, identify potential risks, and offer recommendations for mitigation, as well as help improve financial management systems",
+            "title_c": "Who can benefit from the service",
+            "text_c": "Financial audit is suitable for companies of any size and industry, especially for those aiming to enhance transparency and trust from investors, creditors, and stakeholders",
+            "title_d": "Any additional details or considerations",
+            "text_d": "Our goal is not only to audit financial statements but also to help your company become more resilient and competitive. We work with you to identify the strengths and weaknesses of your financial system and offer solutions for improvement"
+          }
+        </include>
+
+        <include src="./html/_services.html">
+          {
+            "id": "tax",
+            "title": "Tax planning",
+            "from": "from 1200$",
+            "image": "tax.jpeg",
+            "title_a": "What the service includes",
+            "text_a": "Our tax planning service involves developing individual strategies to minimize tax payments, optimize tax obligations, and ensure compliance with tax legislation",
+            "title_b": "Key features and benefits",
+            "text_b": "Our tax experts will help you optimize your tax burden, reduce costs, and avoid tax issues. We offer a personalized approach to each client and ensure compliance with all legislative requirements",
+            "title_c": "Who can benefit from the service",
+            "text_c": "Tax planning is suitable for any business looking to reduce tax liabilities and comply with legislation, as well as for individuals seeking to optimize their tax obligations",
+            "title_d": "Any additional details or considerations",
+            "text_d": "We will help you develop a tax strategy that not only saves money but also ensures the sustainability and competitiveness of your business in the long run"
+          }
+        </include>
 
         <include src="./html/services/_faq.html"></include>
 
+        <include src="./html/home/_reviews.html"></include>
       </div>
+
+      <include src="./html/home/_request.html"></include>
 
     </main>
 

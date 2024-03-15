@@ -1,0 +1,17 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.history {
+  display: flex;
+  align-items: center;
+  padding: 56px 0;
+
+  img {
+    margin-right: 48px;
+    border-radius: var(--radius-main);
+  }
+
+  p {
+    font-size: 24px;
+  }
+}

@@ -3,38 +3,33 @@
 
 .hero {
   $root: &;
-  padding: rem(37) 0;
-
-  &__inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-    border-radius: calc(var(--radius-main) * 2);
-    min-height: 584px;
-    background-position: 0 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+  padding: 86px 0;
+  display: flex;
+  justify-content: space-between;
 
   &__content {
     z-index: 1;
-    padding: 0 rem(67);
     width: 100%;
-    max-width: 720px;
-    color: var(--color-white);
+    max-width: 648px;
   }
 
   h1 {
-    margin-bottom: 24px;
-    font-size: clamp(2rem, 1.6176rem + 1.3vi, 3rem);
-    line-height: 1.07;
+    font-size: 76px;
+    line-height: 1.19;
+    margin-right: 24px;
+    max-width: 485px;
   }
 
   p {
-    margin-bottom: rem(40);
+    font-weight: var(--fw-400);
     font-size: 24px;
-    letter-spacing: 0.003em;
+    line-height: 1.5;
+  }
+
+  &--home {
+    p {
+      margin-bottom: 24px;
+    }
   }
 
   &--services {
