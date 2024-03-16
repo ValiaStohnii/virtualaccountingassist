@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Resources"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+    <include src="./html/_header.html" locals='{"page": "resources"}'></include>
+
+    <main class="main">
+      <div class="container">
+        <include src="./html/_hero.html">
+          {
+            "title": "Resource hub: empowering your financial knowledge",
+            "text": "Explore our resource hub to access a wealth of articles and insights designed to enhance your financial literacy and empower your decision-making. From tax tips
+            to budgeting strategies, our curated collection covers
+            a wide range of topics to support your financial journey. Dive in and discover valuable resources tailored to your needs"
+          }
+        </include>
+
+        <include src="./html/resources/_articles.html"></include>
+
+      </div>
+    </main>
+
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

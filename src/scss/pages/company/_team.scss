@@ -21,6 +21,7 @@
     img {
       margin-bottom: 16px;
       border-radius: var(--radius-main);
+      width: 100%;
       max-width: 312px;
     }
 
@@ -68,27 +69,25 @@
   @include media(tablet) {
     padding: rem(60) 0 0;
 
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     &__item {
       align-items: flex-start;
 
       img {
-        height: max-content;
-        max-width: 90px;
+        max-width: none;
+      }
+
+      &:hover .team__content,
+      &:focus .team__content {
+        opacity: 0;
       }
     }
   }
 
   @include media(mobile-l) {
-    &__item {
-      padding: 24px;
-
-      img {
-        margin-right: 14px;
-        margin-bottom: 0;
-        max-width: 48px;
-      }
-    }
-
     &__name {
       display: flex;
       margin-bottom: 30px;
@@ -103,6 +102,12 @@
       margin-left: 0;
       font-size: 20px;
       text-align: left;
+    }
+  }
+
+  @include media(mobile-m) {
+    &__grid {
+      grid-template-columns: 1fr;
     }
   }
 }

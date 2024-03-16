@@ -25,12 +25,20 @@
     font-weight: var(--fw-700);
     font-size: 64px;
     line-height: 1;
+
+    @include media(mobile-l) {
+      font-size: 36px;
+    }
   }
 
   p {
     font-weight: var(--fw-400);
     font-size: 24px;
     line-height: 1.19;
+
+    @include media(mobile-l) {
+      font-size: 18px;
+    }
   }
 
   &--double {
@@ -68,6 +76,19 @@
 
       &--yellow {
         background-color: var( --color-yellow-200);
+      }
+    }
+
+    @include media(tablet) {
+      flex-direction: column;
+      padding: 40px 0;
+
+      #{$root}__content {
+        &--gray {
+          margin-right: 0;
+          margin-bottom: 24px;
+          max-width: none;
+        }
       }
     }
   }

@@ -12,6 +12,7 @@ h2 {
   color: var(--color-dark);
 
   @include media(mobile-m) {
+    font-size: 36px !important;
     line-height: 1.2;
   }
 }

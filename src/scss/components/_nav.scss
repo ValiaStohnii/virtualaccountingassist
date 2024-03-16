@@ -45,6 +45,10 @@
     &:not(:last-of-type, .footer .nav__item) {
       margin-right: 32px;
 
+      @include media(tablet) {
+        margin-right: 12px;
+      }
+
       @include media(mobile-l) {
         margin-right: 0;
       }
@@ -67,6 +71,10 @@
 
   .btn--simple {
     margin-right: 24px;
+
+    @include media(tablet) {
+      margin-right: 12px;
+    }
   }
 
   .btn {

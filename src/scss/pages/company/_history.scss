@@ -24,4 +24,25 @@
       margin-right: 48px;
     }
   }
+
+  @include media(tablet-wide) {
+    flex-direction: column;
+
+    img {
+      margin-right: 0;
+      margin-bottom: 24px;
+      width: 100%;
+    }
+
+    &--reverse {
+      img {
+        margin-right: 0;
+      }
+
+      p {
+        margin-right: 0;
+        margin-bottom: 23px;
+      }
+    }
+  }
 }

@@ -80,9 +80,15 @@
     &__slider {
       margin-bottom: 0;
     }
+
+    &__content {
+      margin-right: 24px;
+    }
   }
 
   @include media(mobile-l) {
+    flex-direction: column;
+  
     &__slide {
       display: block;
       align-items: center;
@@ -95,8 +101,6 @@
 
     &__content {
       margin: 0 0 20px;
-      padding: 20px;
-      max-width: 500px;
     }
   }
 

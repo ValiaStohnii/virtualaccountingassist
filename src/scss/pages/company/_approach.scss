@@ -20,6 +20,7 @@
 
   img {
     border-radius: var(--radius-main);
+    width: 100%;
   }
 
   h2 {
@@ -36,5 +37,26 @@
   p {
     font-size: 20px;
     line-height: 1.5;
+  }
+
+  @include media(mobile-l) {
+    padding: 30px 0;
+
+    h2 {
+      margin-bottom: 24px;
+    }
+
+    &__content {
+      flex-direction: column;
+    }
+
+    &__list {
+      margin-right: 0;
+      margin-bottom: 24px;
+    }
+
+    img {
+      aspect-ratio: 2/1;
+    }
   }
 }

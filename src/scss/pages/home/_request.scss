@@ -79,10 +79,17 @@
   }
 
   @include media(tablet) {
-    padding: rem(60) 0;
+    padding: rem(60) 0 0;
 
-    &__form {
-      margin-bottom: 20px;
+    h2 {
+      margin: 0 auto 24px;
+      padding-left: 0;
+      max-width: none;
+    }
+
+    &__container {
+      flex-direction: column;
+      align-items: center;
     }
 
     a {
@@ -91,9 +98,14 @@
     }
   }
 
-  @include media(mobile-m) {
-    border-radius: calc(var(--radius-main) * 2) calc(var(--radius-main) * 2) 0 0;
+  @include media(mobile-l) {
+    &__form {
+      padding: 30px;
+      max-width: none;
+    }
+  }
 
+  @include media(mobile-m) {
     h2,
     h3,
     a,
@@ -108,10 +120,15 @@
       height: 120px;
     }
 
+    &__content {
+      padding-left: 12px;
+    }
+
     &__form-field,
     &__form-box {
       flex-direction: column;
       gap: 5px;
     }
+
   }
 }

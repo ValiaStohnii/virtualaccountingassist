@@ -37,6 +37,7 @@
   &__image {
     margin-bottom: 16px;
     border-radius: var(--radius-main);
+    width: 100%;
   }
 
   .btn {
@@ -51,23 +52,18 @@
     &__grid {
       grid-template-columns: repeat(2, 1fr);
     }
-
-    &__item {
-      &:last-child {
-        grid-column: 1 / span 2;
-      }
-    }
   }
 
   @include media(mobile-l) {
+    h2 {
+      margin-bottom: 24px;
+    }
+  
     &__grid {
       grid-template-columns: 1fr;
     }
 
     &__item {
-      padding: 24px;
-      padding-top: 96px;
-
       &:last-child {
         grid-column: auto;
       }

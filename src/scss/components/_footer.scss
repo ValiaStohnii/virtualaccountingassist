@@ -21,6 +21,15 @@
   .nav__item {
     &:not(:last-child) {
       margin-right: 48px;
+
+      @include media(tablet) {
+        margin-right: 12px;
+      }
+
+      @include media(mobile-l) {
+        margin-right: 0;
+        margin-bottom: 12px;
+      }
     }
   }
 
@@ -58,7 +67,7 @@
   @include media(tablet) {
     &__nav {
       &:not(:last-child) {
-        margin-right: rem(40);
+        margin-right: 12px;
       }
 
       p {
@@ -73,29 +82,43 @@
 
   @include media(mobile-l) {
     &__inner {
-      flex-direction: column-reverse;
+      flex-direction: column;
       margin: 0 auto;
+    }
+
+    .logo {
+      margin-right: 0;
+      margin-bottom: 24px;
+    }
+
+    &__nav {
+      flex-direction: column;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+
+    &__copyrigth {
+      flex-direction: column;
+      padding-top: 24px;
+
+      .copyrigth {
+        &__list {
+          flex-direction: column;
+        }
+
+        &__item {
+          &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 12px;
+          }
+        }
+      }
     }
   }
 
   @include media(mobile-m) {
-    &__inner {
-      align-items: baseline;
-    }
-
-    &__navs {
-      flex-direction: column;
-      margin-bottom: 40px;
-    }
-
-    &__nav {
-      margin-bottom: 40px;
-    }
-
-    &__copyrigth {
-      text-align: left;
-    }
-
     .logo {
       margin-bottom: 32px;
     }
