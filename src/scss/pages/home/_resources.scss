@@ -2,12 +2,12 @@
 @use "../../utils/mixins/"as*;
 
 .resources {
-  padding: 56px 0 86px;
+  padding: 56px 0 84px;
 
   &__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 48px;
+    margin-bottom: 47px;
     gap: 24px;
   }
 
@@ -19,7 +19,7 @@
   }
 
   h2 {
-    margin-bottom: 48px;
+    margin-bottom: 47px;
   }
 
   h3 {
@@ -42,7 +42,7 @@
 
   .btn {
     margin: 0 auto;
-    padding: 10px 60px;
+    padding: 9px 56px;
     max-width: fit-content;
   }
 

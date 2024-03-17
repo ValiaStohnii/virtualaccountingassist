@@ -2,14 +2,14 @@
 @use "../../utils/mixins/"as*;
 
 .approach {
-  padding: 56px 0;
+  padding: 56px 0 86px;
 
   &__content {
     display: flex;
   }
 
   &__list {
-    margin-right: 48px;
+    margin-right: 60px;
   }
 
   &__item {
@@ -20,7 +20,7 @@
 
   img {
     border-radius: var(--radius-main);
-    width: 100%;
+    width: 93%;
   }
 
   h2 {

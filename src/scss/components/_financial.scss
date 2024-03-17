@@ -13,8 +13,12 @@
     margin-bottom: 24px;
   }
 
+  h2 {
+    letter-spacing: 3;
+  }
+
   p {
-    margin-bottom: 64px;
+    margin-bottom: 65px;
     font-size: 24px;
   }
 
@@ -34,8 +38,10 @@
 
     h3 {
       margin-bottom: 24px;
+      max-width: 255px;
       font-size: 36px;
       line-height: 1.4;
+      letter-spacing: 1.2px;
     }
 
     p {
@@ -81,6 +87,7 @@
 
     &--creativity {
       background-image: url("../images/icons/creativity.svg");
+      background-position: 50% 38%;
     }
   }
 
@@ -153,7 +160,6 @@
   }
 
   @include media(mobile-m) {
-
     &__item {
       padding: 16px;
     }

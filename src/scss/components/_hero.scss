@@ -4,7 +4,7 @@
 .hero {
   $root: &;
 
-  padding: 86px 0 56px;
+  padding: 85px 0 50px;
   display: flex;
   justify-content: space-between;
 
@@ -16,9 +16,10 @@
 
   h1 {
     font-size: 76px;
-    line-height: 1.19;
+    line-height: 1.29;
     margin-right: 24px;
     max-width: 485px;
+    letter-spacing: 4px;
   }
 
   p {
@@ -28,8 +29,14 @@
   }
 
   &--home {
+    padding: 85px 0;
+
+    h1 {
+      line-height: 1.19;
+    }
+
     p {
-      margin-bottom: 24px;
+      margin-bottom: 23px;
     }
   }
 
@@ -39,6 +46,11 @@
    #{$root}__content { 
       display: flex;
       flex-direction: column;
+      justify-content: center;
+    }
+
+    h1 {
+      max-width: 600px;
     }
 
     p {

@@ -33,7 +33,7 @@
   &__list {
     display: flex;
     align-items: center;
-    margin: 0 auto;
+    margin: 0 181px 0 auto;
 
     @include media(mobile-l) {
       z-index: -1;
@@ -70,7 +70,7 @@
   }
 
   .btn--simple {
-    margin-right: 24px;
+    margin-right: 23px;
 
     @include media(tablet) {
       margin-right: 12px;
