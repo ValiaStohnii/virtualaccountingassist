@@ -114,10 +114,19 @@
 
     &__item {
       &:last-child {
+        align-items: center;
         justify-self: center;
-        max-width: 360px;
         grid-column: 1 / span 2;
+        width: 100%;
+
+        h3 {
+          max-width: unset;
+        }
       }
+    }
+
+    &__image {
+      margin: 0 auto 30px;
     }
   }
 

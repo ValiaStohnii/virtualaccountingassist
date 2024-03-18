@@ -3,7 +3,7 @@
 @use "../utils/mixins/"as*;
 
 .divider {
-  padding: 86px 0;
+  padding: 85px 0;
 
   &__before {
     margin-bottom: 24px;
@@ -23,5 +23,6 @@
     font-weight: var(--fw-500);
     font-size: 36px;
     line-height: 1.4;
+    letter-spacing: 1.4px;
   }
 }

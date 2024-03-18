@@ -84,7 +84,7 @@
   }
 
   @include media(tablet) {
-    padding: rem(60) 0 0;
+    padding: 30px 20px;
 
     h2 {
       margin: 0 auto 24px;
@@ -100,6 +100,11 @@
     a {
       margin-bottom: 20px;
       font-size: 20px;
+    }
+
+    input,
+    textarea {
+      max-width: unset;
     }
   }
 

@@ -45,6 +45,18 @@
     }
   }
 
+  @include media(tablet) {
+    justify-content: space-around;
+
+    &__content {
+      min-width: unset;
+
+      &--center {
+        margin: 0;
+      }
+    }
+  }
+
   &--double {
     justify-content: space-between;
     margin-bottom: 0;
@@ -58,6 +70,7 @@
       font-size: 36px;
       font-weight: var(--fw-400);
       line-height: 1.4;
+      letter-spacing: 1.3px;
     }
 
     p {
@@ -80,6 +93,12 @@
 
       &--yellow {
         background-color: var( --color-yellow-200);
+      }
+    }
+
+    &.additional--how-it-works {
+      #{$root}__content {
+        padding: 46px 36px;
       }
     }
 

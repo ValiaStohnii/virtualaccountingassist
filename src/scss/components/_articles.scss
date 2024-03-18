@@ -2,13 +2,13 @@
 @use "../utils/mixins/"as*;
 
 .articles {
-  padding: 56px 0 86px;
+  padding: 66px 0 1px;
 
   &__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 48px;
-    gap: 24px;
+    gap: 23px 24px;
   }
 
   &__item {

@@ -86,6 +86,20 @@
     }
   }
 
+  &--how-it-works {
+    padding: 85px 0 11px;
+    
+    h1 {
+      max-width: 745px;
+    }
+  }
+
+  &--resources {
+    h1  {
+      max-width: 515px;
+    }
+  }
+
   &--articles {
     h1 {
       max-width: 745px;
@@ -110,7 +124,7 @@
   }
 
   @include media(tablet) {
-    padding: 0;
+    padding: 0 0 30px;
 
     &__inner {
       min-height: 442px;
@@ -125,7 +139,11 @@
     flex-direction: column;
 
     h1 {
-      margin: 0 auto 24px;
+      margin: 0 0 24px;
+    }
+
+    &__content {
+      padding: 0;
     }
 
     &--services {
@@ -149,7 +167,6 @@
       }
 
       .hero__content {
-        padding: 40px;
         position: relative;
         z-index: 1;
       }
